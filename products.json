@@ -1,0 +1,94 @@
+[
+  {
+    "productId": "1",
+    "title": "sturdy bag",
+    "price": 40,
+    "colors": ["green", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675067903/e-cart/Mission-Duffel-55-Forest-Green-Hover-Landscape-01_e04v5t_yzqxsi.webp",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675067895/e-cart/Mission-Duffel-55-Forest-Green-Grid-Landscape-01_spn1fr_hris3l.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials",
+    "fitStyle": "card-wide"
+  },
+  {
+    "productId": "2",
+    "title": "T shirst",
+    "price": 4,
+    "colors": ["red", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675070787/e-cart/Kids_-Gear-Guard-Double-Sided-T-Shirt-Heather-Grey-Hover-Portrait-01_qkbh57_rfkyzs.webp",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675070781/e-cart/Kids_-Gear-Guard-Double-Sided-T-Shirt-Heather-Grey-Grid-Portrait-01_zle35h_xvzoim.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials"
+  },
+  {
+    "productId": "3",
+    "title": "Cap",
+    "price": 4,
+    "colors": ["red", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675059693/e-cart/Gear-Guard-Face-Hat-Primary-01_xaf2qt_pkoxzg.jpg",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675059677/e-cart/Gear-Guard-Face-Hat-Primary-02_flnzxj_txkbbe.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials"
+  },
+
+  {
+    "productId": "4",
+    "title": "Best bag",
+    "price": 4,
+    "colors": ["red", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675061165/e-cart/gear-card-four-two_zx3c6f.webp",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675061137/e-cart/gear-card-four-one_aaivy3.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials"
+  },
+  {
+    "productId": "5",
+    "title": "hand bag",
+    "price": 4,
+    "colors": ["red", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675066002/e-cart/gear-card-eight-two_cudgdl.webp",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675065994/e-cart/gear-card-eight-one_es6pzo.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials"
+  },
+  {
+    "productId": "6",
+    "title": "carry bag",
+    "price": 4,
+    "colors": ["red", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675066002/e-cart/gear-card-eight-two_cudgdl.webp",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675065994/e-cart/gear-card-eight-one_es6pzo.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials"
+  },
+  {
+    "productId": "7",
+    "title": "Floor mats",
+    "price": 4,
+    "colors": ["red", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675066277/e-cart/Floormats-R1T-Primary-02_fxlfoy_1_oimswi.webp",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675066857/e-cart/Floormats-R1T-Grid-Landscape-01_sm6cco_1_kgij3e.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials"
+  },
+  {
+    "productId": "8",
+    "title": "car charger",
+    "price": 4,
+    "colors": ["red", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675067016/e-cart/Wall-Charger-Hover-Landscape-01_gvnyex_1_sjlg4v.webp",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675067045/e-cart/Wall-Charger-Grid-Landscape-01_juj65u_1_ecyney.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials"
+  },
+  {
+    "productId": "9",
+    "title": "Car tent",
+    "price": 350,
+    "colors": ["red", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675067404/e-cart/Rooftop-Tent-Pewter-Hover-Landscape-01_i9tlok_bsaqme.webp",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675067393/e-cart/Rooftop-Tent-Yellow-Grid-Landscape-01_m7w3ou_fu563w.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials"
+  },
+  {
+    "productId": "10",
+    "title": "Rivian torch",
+    "price": 4,
+    "colors": ["red", "blue"],
+    "img1": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675067608/e-cart/Rivian-Torch-Hover-Landscape-01_tpnvhi_cwsnnt.webp",
+    "img2": "https://res.cloudinary.com/dsqdxdbkl/image/upload/v1675067597/e-cart/Rivian-Torch-Grid-Landscape-01_j0zjjj_cxzgip.webp",
+    "desc": "We teamed up with Mystery Ranch in Bozeman, MT, to make some good things even better. Aligned in making decisions based on their environmental impact, we revamped the Mission Duffel 55 with tough, light, long-wearing RECYCLED CORDURA® NYLON FABRIC made from reclaimed materials"
+  }
+]
