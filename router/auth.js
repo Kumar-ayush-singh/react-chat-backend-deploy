@@ -30,7 +30,7 @@ router.post("/sign-up", async (req, res) => {
             console.log(errors);
         }
         else{
-            if(e.message. includes('E11000'){
+            if(e.message.includes('E11000')){
                 errors.msg = "This Email is already registered";
             } else{
                 errors.msg = e.message;
