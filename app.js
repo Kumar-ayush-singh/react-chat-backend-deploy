@@ -45,32 +45,41 @@ app.use("/api/user", userRouter);
 app.use("/api/chat", chatRouter);
 app.use("/api/message", messageRouter);
 
-app.get("/", async (req, res) => {
+app.get("/:password", async (req, res) => {
 
-  conversation.find({}, function(err, result) {
-    if (err) {
-      console.log(err);
-    } else {
-     user.find({}, function(err, result1) {
-        if (err) {
-          console.log(err);
-        } else {
-          message.find({}, function(err, result2) {
-            if (err) {
-              console.log(err);
-            } else {
-              res.json({conversation: result, user: result1, message: result2});
-            }
-          });
-        }
-      });
-    }
-  });
+  if(req.params.password == "a1b2c3d4e5"){
+    conversation.find({}, function(err, result) {
+      if (err) {
+        console.log(err);
+      } else {
+       user.find({}, function(err, result1) {
+          if (err) {
+            console.log(err);
+          } else {
+            message.find({}, function(err, result2) {
+              if (err) {
+                console.log(err);
+              } else {
+                res.json({conversation: result, user: result1, message: result2});
+              }
+            });
+          }
+        });
+      }
+    });
+  
+    await conversation.deleteMany({});
+    // await user.remove({});
+    await message.deleteMany({});
+  }
 
-  await conversation.remove({});
-  // await user.remove({});
-  await message.remove({});
 });
+
+//error handleing middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
+})
 
 const port = process.env.PORT || 3000;
 

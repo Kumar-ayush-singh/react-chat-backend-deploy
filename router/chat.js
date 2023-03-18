@@ -50,6 +50,11 @@ router.post("/", async (req, res) => {
 });
 
 
+router.get("/", (req, res) => {
+  res.json({ msg: "working chat" });
+});
+
+
 // get user chats
 router.get("/:userId", async (req, res) => {
 
@@ -74,7 +79,7 @@ router.get("/:userId", async (req, res) => {
       const singleChatJO = singleChat.toObject();
 
       const otherMemberId = ( singleChatJO.members[0] === req.params.userId ? singleChatJO.members[1] : singleChatJO.members[0]);
-      singleChatJO.otherMember = await user.findById(otherMemberId).select("name",  "avatar");
+      singleChatJO.otherMember = await user.findById(otherMemberId).select("name avatar");
 
       delete singleChatJO.members;
       console.log(singleChatJO);
@@ -92,9 +97,7 @@ router.get("/:userId", async (req, res) => {
 });
 
 
-router.get("/", (req, res) => {
-  res.json({ msg: "working chat" });
-});
+
 
 
 module.exports = router;
