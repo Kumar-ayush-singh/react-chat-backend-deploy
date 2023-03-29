@@ -45,12 +45,16 @@ router.get("/:chatId", async (req, res) => {
   console.log(`\t>> Request Parameters >>>>`);
   console.log(req.params);
 
+  const TR = (new Date()).getTime();
+
   try {
     const messages = await Message.find({
       chatId: req.params.chatId,
     });
 
-    res.status(200).json(messages);
+    const TAD = (new Date()).getTime();
+
+    res.status(200).json({messages: messages, TR, TAD});
     
   } catch (err) {
     consoleError(err);

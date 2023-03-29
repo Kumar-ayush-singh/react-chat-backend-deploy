@@ -90,13 +90,10 @@ router.get("/get-all/", async (req, res) => {
 
 
 router.post("/set-avatar", async (req, res) => {
-  const user = await User.findById(req.user.userId).exec();
-
-  user.avatar = req.body.avatar;
-  const updatedUser = await user.save();
-
-
-  res.status(200).send(updatedUser.avatar);
+  const update = await User.findByIdAndUpdate(req.user.userId, {
+    avatar: req.body.avatar,
+  })
+  res.status(200).send(req.body.avatar);
 })
 
 

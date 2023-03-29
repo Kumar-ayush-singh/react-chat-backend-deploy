@@ -68,10 +68,7 @@ router.get("/:userId", async (req, res) => {
       // check members array inside
       members: { $in: [req.params.userId] },
       //is this id exsist in members if yes then return all the memeber array that include this id
-    }).populate("lastMessage", "text senderId").populate("lastViewedMessage", "senderId").sort({updatedAt: -1});
-
-    console.log("all chat original object \v");
-    console.log(allChats);
+    }).populate("lastMessage", "text senderId createdAt").populate("lastViewedMessage", "senderId").sort({updatedAt: -1});
 
     //modifying response to reduce handshaks
     const promiseOfAllChatsWithData = await allChats.map( async(singleChat) => {
@@ -82,7 +79,6 @@ router.get("/:userId", async (req, res) => {
       singleChatJO.otherMember = await user.findById(otherMemberId).select("name avatar");
 
       delete singleChatJO.members;
-      console.log(singleChatJO);
       return singleChatJO;
     })
     

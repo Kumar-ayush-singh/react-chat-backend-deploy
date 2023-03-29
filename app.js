@@ -141,9 +141,7 @@ io.on("connection", (socket) => {
       const chat = await conversation.findById(chatId).exec();
       chat.lastMessage = saveMessage._id;
       chat.unreadMsgCount++;
-      const newmsg = await chat.save();
-      console.warn(`value after update is ${newmsg.unreadMsgCount}`);
-      console.log(newmsg);
+      await chat.save();
 
       //forwarding message if receiver is online
       console.log(`message for ${receiverId} is emmited to socket : ${onlineUsers[receiverId]}`)
@@ -164,19 +162,25 @@ io.on("connection", (socket) => {
   })
 
   //handling viewed message
-  socket.on("message-viewed", async(chatId, lastViewedMessageId, callback) => {
+  socket.on("message-viewed", async(chatId, lastMessage, callback) => {
     try{
       const chat = await conversation.findById(chatId).exec();
-      chat.lastViewedMessage = lastViewedMessageId;
+      chat.lastViewedMessage = lastMessage._id,
       chat.unreadMsgCount = 0;
-      await chat.save();
+      await chat.save({
+        timestamps: false,
+      });
       callback({status:200});
+      
+      //sending res to sender
+      if(onlineUsers[lastMessage.senderId]){
+        socket.to(onlineUsers[lastMessage.senderId]).emit("message-viewed-by-receiver", lastMessage._id);
+      }
     } catch(error) {
       consoleError(error);
       callback({status:500});
     }
   })
-
 
 
   //handeling when user disconnect
