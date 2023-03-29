@@ -27,6 +27,9 @@ const auth = async (req, res, next) => {
       res.status(403);
     }
   } catch (error) {
+    if(error.message == 'jwt expired'){
+      res.status(403);
+    }
     res.status(500);
     console.log(error);
   }
